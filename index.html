@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+        <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="form-wrapper">
+         <div class="tabs">
+                <div class="tab">Convert</div>
+                <div class="tab">Chart</div>
+            </div>
+        <div class="form-inputs">
+            <form class="converter-form">
+                <div class="input-wrapper">
+                    <label for="amount">Amount</label>
+                    <input type="number">
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="from">From</label>
+                    <input type="text" value="" class="amount">
+                </div>
+               
+                <div class="input-wrapper">
+                    <label for="to">To</label>
+                    <input type="text" value="">
+                </div>
+            </form>
+            <div class="result">
+                <p>1.00 British Pound =</p>
+                <h3>1.2005379 Euros</h3>
+                <span>1 EUR = 0.832960 GBP</span>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
