@@ -23,4 +23,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     tabs[0].click();
+
+
+    const convertButton = document.querySelector('.convert-button');
+    const resoultText = document.querySelector('.result');
+    const resoultForm = document.querySelector('.result-form');
+
+    convertButton.addEventListener('click', function() {
+        resoultText.style.display = 'block';
+        resoultText.style.display = 'block';
+        resoultForm.style.justifyContent = 'space-between';
+    });
 });

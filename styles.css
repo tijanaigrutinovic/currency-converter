@@ -20,7 +20,6 @@ body {
   width: 50%;
   padding: 20px;
   text-align: center;
-  border: 1px solid black;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   border-radius: 6px 0 0 0;
@@ -29,7 +28,6 @@ body {
   width: 50%;
   padding: 20px;
   text-align: center;
-  border: 1px solid black;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   border-radius: 0 6px 0 0;
@@ -75,6 +73,33 @@ body {
 
 .tablinks.active {
   background-color: #ccc;
+}
+
+.result-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.result-form .result {
+  display: none;
+}
+.result-form .convert button {
+  transition-duration: 0.3s;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0px;
+  outline-offset: 4px;
+  font-weight: 600;
+  text-align: center;
+  background: rgb(0, 113, 235);
+  color: #fff;
+  border-radius: 8px;
+  border: 2px solid rgb(0, 113, 235);
+  cursor: pointer;
+}
+.result-form .convert button:hover {
+  background: rgb(38, 151, 255);
+  border-color: rgb(38, 151, 255);
 }
 
 /*# sourceMappingURL=styles.css.map */
