@@ -54,7 +54,31 @@ body {
   margin-bottom: 5px;
   font-family: "Roboto", sans-serif;
 }
-.converter-form .input-wrapper input {
+.converter-form .input-wrapper input, .converter-form .input-wrapper select {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(221, 221, 221);
+  border-radius: 6px;
+  box-shadow: rgba(0, 17, 51, 0.05) 0px 3px 15px;
+  padding: 12px;
+  color: rgb(20, 30, 55);
+  background: none;
+  width: 250px;
+}
+
+.chart-form {
+  display: flex;
+}
+.chart-form .input-wrapper {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.chart-form .input-wrapper label {
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+}
+.chart-form .input-wrapper input {
   border-width: 1px;
   border-style: solid;
   border-color: rgb(221, 221, 221);
@@ -83,6 +107,18 @@ body {
 .result-form .result {
   display: none;
 }
+.result-form .result p {
+  font-family: "Roboto", sans-serif;
+  color: #262626;
+}
+.result-form .result h3 {
+  font-family: "Roboto", sans-serif;
+  color: #262626;
+}
+.result-form .result span {
+  font-family: "Roboto", sans-serif;
+  color: #262626;
+}
 .result-form .convert button {
   transition-duration: 0.3s;
   padding: 10px 20px;
@@ -98,6 +134,33 @@ body {
   cursor: pointer;
 }
 .result-form .convert button:hover {
+  background: rgb(38, 151, 255);
+  border-color: rgb(38, 151, 255);
+}
+
+.chart-result-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.chart-result-form .chart-result {
+  display: none;
+}
+.chart-result-form .chart button {
+  transition-duration: 0.3s;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0px;
+  outline-offset: 4px;
+  font-weight: 600;
+  text-align: center;
+  background: rgb(0, 113, 235);
+  color: #fff;
+  border-radius: 8px;
+  border: 2px solid rgb(0, 113, 235);
+  cursor: pointer;
+}
+.chart-result-form .chart button:hover {
   background: rgb(38, 151, 255);
   border-color: rgb(38, 151, 255);
 }

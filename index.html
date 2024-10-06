@@ -18,6 +18,7 @@
                 <div class="convert-tab tablinks" data-tab="Tab1">Convert</div>
                 <div class="chart-tab tablinks" data-tab="Tab2">Chart</div>
         </div>
+        <!-- convert tab -->
         <div class="form-inputs tab-content" data-tab="Tab1">
             <form class="converter-form">
                 <div class="input-wrapper">
@@ -27,33 +28,30 @@
                 
                 <div class="input-wrapper">
                     <label for="from">From</label>
-                    <input type="text" value="" class="amount">
+                    <select id="from" class="amount"></select>
                 </div>
                
                 <div class="input-wrapper">
                     <label for="to">To</label>
-                    <input type="text" value="">
+                    <select id="to"></select>
                 </div>
             </form>
             <div class="result-form">
                 <div class="result">
-                    <p>1.00 British Pound =</p>
-                    <h3>1.2005379 Euros</h3>
-                    <span>1 EUR = 0.832960 GBP</span>
+                    <p></p>
+                    <h3></h3>
+                    <span></span>
                 </div>
                 <div class="convert">
                     <button class="convert-button">Convert</button>
                 </div>
             </div>
         </div>
-        
+        <!-- convert tab -->
+
+        <!-- chart tab -->
         <div class="form-inputs tab-content" data-tab="Tab2">
-            <form class="converter-form">
-                <div class="input-wrapper">
-                    <label for="amount">test</label>
-                    <input type="number">
-                </div>
-                
+            <form class="chart-form">                
                 <div class="input-wrapper">
                     <label for="from">From</label>
                     <input type="text" value="" class="amount">
@@ -64,9 +62,17 @@
                     <input type="text" value="">
                 </div>
             </form>
-            
-            
+            <div class="chart-result-form">
+                <div class="chart-result">
+                    test
+                </div>
+                <div class="chart">
+                    <button class="chart-button">View Chart</button>
+                </div>
+            </div>
         </div>
+        <!-- chart tab -->
+
     </div>
     <script src="script.js"></script> 
 </body>
