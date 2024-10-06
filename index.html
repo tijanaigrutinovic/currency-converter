@@ -15,10 +15,10 @@
 <body>
     <div class="form-wrapper">
          <div class="tabs">
-                <div class="tab">Convert</div>
-                <div class="tab">Chart</div>
-            </div>
-        <div class="form-inputs">
+                <div class="convert-tab tablinks" data-tab="Tab1">Convert</div>
+                <div class="chart-tab tablinks" data-tab="Tab2">Chart</div>
+        </div>
+        <div class="form-inputs tab-content" data-tab="Tab1">
             <form class="converter-form">
                 <div class="input-wrapper">
                     <label for="amount">Amount</label>
@@ -42,6 +42,29 @@
             </div>
         </div>
         
+        <div class="form-inputs tab-content" data-tab="Tab2">
+            <form class="converter-form">
+                <div class="input-wrapper">
+                    <label for="amount">test</label>
+                    <input type="number">
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="from">From</label>
+                    <input type="text" value="" class="amount">
+                </div>
+               
+                <div class="input-wrapper">
+                    <label for="to">To</label>
+                    <input type="text" value="">
+                </div>
+            </form>
+            <div class="result">
+                <p>1.00 British Pound =</p>
+                <h3>1.2005379 Euros</h3>
+                <span>1 EUR = 0.832960 GBP</span>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script> 
 </body>
