@@ -44,11 +44,26 @@ body {
 
 .converter-form {
   display: flex;
+  width: 100%;
+  flex-direction: row;
+  width: 900px;
+}
+@media screen and (max-width: 1000px) {
+  .converter-form {
+    flex-direction: column;
+    width: unset;
+  }
 }
 .converter-form .input-wrapper {
   margin: 10px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+  .converter-form .input-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .converter-form .input-wrapper label {
   margin-bottom: 5px;
@@ -64,19 +79,45 @@ body {
   color: rgb(20, 30, 55);
   background: none;
   width: 250px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+  .converter-form .input-wrapper input, .converter-form .input-wrapper select {
+    width: 300px;
+  }
 }
 
 .chart-form {
   display: flex;
+  width: 100%;
+  flex-direction: row;
+  width: 900px;
+}
+@media screen and (max-width: 1000px) {
+  .chart-form {
+    flex-direction: column;
+    width: unset;
+  }
 }
 .chart-form .input-wrapper {
   margin: 10px;
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .chart-form .input-wrapper {
+    width: 100%;
+  }
 }
 .chart-form .input-wrapper label {
   margin-bottom: 5px;
   font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 1000px) {
+  .chart-form .input-wrapper label {
+    width: 300px;
+  }
 }
 .chart-form .input-wrapper input {
   border-width: 1px;
@@ -87,6 +128,12 @@ body {
   padding: 12px;
   color: rgb(20, 30, 55);
   background: none;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+  .chart-form .input-wrapper input {
+    width: 300px;
+  }
 }
 
 .tab-content {
@@ -104,8 +151,19 @@ body {
   flex-direction: row;
   justify-content: flex-end;
 }
+@media screen and (max-width: 1000px) {
+  .result-form {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+}
 .result-form .result {
   display: none;
+}
+@media screen and (max-width: 1000px) {
+  .result-form .result {
+    margin-top: 10px;
+  }
 }
 .result-form .result p {
   font-family: "Roboto", sans-serif;
@@ -132,6 +190,12 @@ body {
   border-radius: 8px;
   border: 2px solid rgb(0, 113, 235);
   cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .result-form .convert button {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 .result-form .convert button:hover {
   background: rgb(38, 151, 255);

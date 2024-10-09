@@ -42,10 +42,21 @@ body {
 
 .converter-form{
     display: flex;
+    width: 100%;
+    flex-direction: row;
+    width: 900px;
+    @media screen and (max-width: 1000px){
+        flex-direction: column;
+        width: unset;
+    }
     .input-wrapper{
         margin: 10px;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 1000px){
+            margin-left: 0;
+            margin-right: 0;
+        }
         label{
             margin-bottom: 5px;
             font-family: "Roboto", sans-serif;
@@ -60,18 +71,36 @@ body {
             color: rgb(20, 30, 55);
             background: none;
             width: 250px;
+            box-sizing: border-box;
+            @media screen and (max-width: 1000px){
+                width: 300px;
+            }
         }
     }
 }
 .chart-form{
     display: flex;
+    width: 100%;
+    flex-direction: row;
+    width: 900px;
+    @media screen and (max-width: 1000px){
+        flex-direction: column;
+        width: unset;
+    }
     .input-wrapper{
         margin: 10px;
         display: flex;
         flex-direction: column;
+        width: 50%;
+        @media screen and (max-width: 1000px){
+            width: 100%;
+        }
         label{
             margin-bottom: 5px;
             font-family: "Roboto", sans-serif;
+            @media screen and (max-width: 1000px){
+                width: 300px;
+            }
         }
         input{
             border-width: 1px;
@@ -82,6 +111,10 @@ body {
             padding: 12px;
             color: rgb(20, 30, 55);
             background: none;
+            box-sizing: border-box;
+            @media screen and (max-width: 1000px){
+                width: 300px;
+            }
         }
     }
     
@@ -101,9 +134,15 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    
+    @media screen and (max-width: 1000px){
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
     .result{
         display: none;
+        @media screen and (max-width: 1000px){
+            margin-top: 10px;
+        }
         p{
             font-family: "Roboto", sans-serif;
             color: #262626;
@@ -131,6 +170,10 @@ body {
             border-radius: 8px;
             border: 2px solid rgb(0, 113, 235);
             cursor: pointer;
+            @media screen and (max-width: 1000px){
+                width: 100%;
+                margin-top: 10px;
+            }
         }
         button:hover{
             background: rgb(38, 151, 255);
