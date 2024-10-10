@@ -141,6 +141,7 @@ body {
   display: none;
   padding: 20px;
   border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 .tablinks.active {
