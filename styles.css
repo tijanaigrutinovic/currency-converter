@@ -58,6 +58,7 @@ body {
   margin: 10px;
   display: flex;
   flex-direction: column;
+  width: 33%;
 }
 @media screen and (max-width: 1000px) {
   .converter-form .input-wrapper {
@@ -78,7 +79,7 @@ body {
   padding: 12px;
   color: rgb(20, 30, 55);
   background: none;
-  width: 250px;
+  width: 100%;
   box-sizing: border-box;
 }
 @media screen and (max-width: 1000px) {
@@ -144,6 +145,7 @@ body {
 
 .tablinks.active {
   background-color: #ccc;
+  font-weight: 500;
 }
 
 .result-form {
@@ -223,6 +225,7 @@ body {
   border-radius: 8px;
   border: 2px solid rgb(0, 113, 235);
   cursor: pointer;
+  margin-right: 10px;
 }
 .chart-result-form .chart button:hover {
   background: rgb(38, 151, 255);
